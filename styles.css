@@ -1,0 +1,37 @@
+.second {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(99, 8, 38);
+}
+.jump {
+width: 450px;
+position: relative;
+}
+.jump > div {
+width: 60px;
+height: 60px;
+background-color: rgb(248, 8, 80);
+box-shadow: 0 0 20px rgb(248, 8, 80);
+display: inline-block;
+border-radius: 90%;
+animation: animate 1.4s infinite ease-in-out both;
+}
+.jump >div:nth-child(1){
+   animation-delay:  -0.32s;
+}
+.jump >div:nth-child(2){
+    animation-delay:  -0.16s;
+ }
+ 
+@keyframes animate {
+
+0%, 80%, 100% {
+ transform: scale(0)
+}
+40%{
+transform: scale(1.0);
+}
+
+}

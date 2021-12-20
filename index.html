@@ -1,72 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animations-CSS</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Animations-CSS</title>
 </head>
+
 <style>
-     *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-     }
-     body {
-       min-height: 100vh;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       background-color: cornflowerblue;
-     }
-      div {
-      width: 200px;
-      height: 200px;
-      box-shadow: 20px 14px 20px #0000008c;
-      border-radius: 10px;
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      }
-      div::before {
-       content: '';
-       background-image: conic-gradient(rgba(101, 252, 227, 0.281) 20deg, transparent 120deg);
-       width: 150%;
-       height: 150%;
-       position: absolute; 
-       animation: rotate 4s linear infinite;
-      }
-      div::after {
-        content: 'CSS-Animations';
-        width: 190px;
-        height: 190px;
-        background: rgba(101, 252, 227, 0.219);
-        position: absolute;
-        border-radius: 10px;
-        display: flex;
-      justify-content: center;
-      align-items: center;
-      color: rgb(4, 49, 37);
-      font-weight: 900;
-      letter-spacing: 2px;
-      box-shadow: insert 20px 20px 20px #0000008c;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .first {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+  }
+
+  .first>div {
+    width: 200px;
+    height: 200px;
+    box-shadow: 20px 14px 20px #0000008c;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .first>div::before {
+    content: '';
+    background-image: conic-gradient(rgba(101, 252, 227, 0.281) 20deg, transparent 120deg);
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 4s linear infinite;
+  }
+
+  .first>div::after {
+    content: 'CSS-Animations';
+    width: 190px;
+    height: 190px;
+    background: rgba(101, 252, 227, 0.219);
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(4, 49, 37);
+    font-weight: 900;
+    letter-spacing: 2px;
+    box-shadow: insert 20px 20px 20px #0000008c;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
     }
 
-      @keyframes rotate {
-      0%{
-        transform: rotate(0deg);
-      }
-      100%{
-          transform: rotate(360deg);
-      }
-      }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 </style>
 
 <body>
+  <section class="first">
+    <div></div>
+  </section>
 
-<div></div>
+  <section class="second">
+    <div class="jump">
+      <div></div>
+      <div></div>
+      <div></div>
+
+
+    </div>
+  </section>
+
+
+
 
 </body>
+
 </html>
