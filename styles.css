@@ -33,5 +33,126 @@ animation: animate 1.4s infinite ease-in-out both;
 40%{
 transform: scale(1.0);
 }
-
 }
+/*third section*/
+
+.third {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #06181f;
+}
+.sweets {
+position: relative;
+width: 900px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 15px;
+}
+.sweets .icon {
+    width: 400px;
+}
+.sweets .icon path {
+fill: transparent;
+stroke-width: 10;
+stroke: #31e8ff;
+}
+/*heart icon*/
+.sweets .icon.heart path {
+stroke-dasharray: 181;
+stroke-dashoffset: 181;
+}
+.sweets .icon.heart:hover path {
+    animation: animated-heart 2s linear infinite;
+}
+@keyframes animated-heart {
+0% {
+    stroke-dashoffset: 0;
+}
+40% {
+    stroke-dashoffset: 181;
+}
+80% {
+    stroke-dashoffset: 362;
+    fill: transparent;
+}
+100% {
+    stroke-dashoffset: 362;
+    fill:#31e8ff
+}
+/*star icon*/
+}
+.sweets .icon.star path {
+    stroke-dasharray: 181;
+    stroke-dashoffset: 181;
+    }
+    .sweets .icon.star:hover path {
+        animation: animated-star 2s linear infinite;
+    }
+    @keyframes animated-star {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    40% {
+        stroke-dashoffset: 181;
+    }
+    80% {
+        stroke-dashoffset: 362;
+        fill: transparent;
+    }
+    100% {
+        stroke-dashoffset: 362;
+        fill:#31e8ff
+    }
+    /*clover icon*/
+    }
+    .sweets .icon.clover path {
+        stroke-dasharray: 181;
+        stroke-dashoffset: 181;
+        }
+        .sweets .icon.clover:hover path {
+            animation: animated-clover 2s linear infinite;
+        }
+        @keyframes animated-clover {
+        0% {
+            stroke-dashoffset: 0;
+        }
+        40% {
+            stroke-dashoffset: 181;
+        }
+        80% {
+            stroke-dashoffset: 362;
+            fill: transparent;
+        }
+        100% {
+            stroke-dashoffset: 362;
+            fill:#31e8ff
+        }
+        /*moon icon*/
+        }
+        .sweets .icon.moon path {
+            stroke-dasharray: 181;
+            stroke-dashoffset: 181;
+            }
+            .sweets .icon.moon:hover path {
+                animation: animated-moon 2s linear infinite;
+            }
+            @keyframes animated-moon {
+            0% {
+                stroke-dashoffset: 0;
+            }
+            40% {
+                stroke-dashoffset: 181;
+            }
+            80% {
+                stroke-dashoffset: 362;
+                fill: transparent;
+            }
+            100% {
+                stroke-dashoffset: 362;
+                fill:#31e8ff
+            }
+            
+            }
